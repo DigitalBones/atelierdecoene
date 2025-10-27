@@ -1,0 +1,132 @@
+fieldLayouts:
+  0d332c38-5f08-461f-b028-2ce7b37df089:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-10-22T18:21:19+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: d4548931-7b37-4baa-8e2b-a30d867bf43d # Text
+            handle: company
+            includeInCards: false
+            instructions: null
+            label: Bedrijfsnaam
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cc64e7f8-c15f-43c1-9db2-f0e54d72aca3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-22T18:21:19+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: d4548931-7b37-4baa-8e2b-a30d867bf43d # Text
+            handle: mobile
+            includeInCards: false
+            instructions: null
+            label: GSM
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 63a0fd28-b4f4-4501-bf22-ed41578044d6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-22T18:21:19+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: d4548931-7b37-4baa-8e2b-a30d867bf43d # Text
+            handle: vat
+            includeInCards: false
+            instructions: null
+            label: Btw-nummer
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3526977a-dbf5-41fb-9fcd-4aa6db38a31a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-22T18:21:19+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: d4548931-7b37-4baa-8e2b-a30d867bf43d # Text
+            handle: bankAccount
+            includeInCards: false
+            instructions: null
+            label: Bankrekening
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8823e4a2-451c-4f9e-a6ec-53494bfaf977
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-22T18:21:19+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 798ec90f-c371-49f8-b40e-a0ec8d2db105 # Multiline
+            handle: address
+            includeInCards: false
+            instructions: null
+            label: Adres
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8f1454a5-057d-43df-925a-e8e38b8b88bd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-22T18:21:19+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 3a7d2bf7-23e8-4092-a213-f26454385d34 # E-mail
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 27a143e3-17ca-45ab-8baa-cdf25f60a2f7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-22T18:21:19+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: cd5e52ee-cc44-4390-a845-1ebdf9365f1c # Web URL
+            handle: website
+            includeInCards: false
+            instructions: null
+            label: Website
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7cdf4471-0ef7-4008-800c-ba53cbe291d1
+            userCondition: null
+            warning: null
+            width: 100
+        name: Info
+        uid: 39b57eae-65c0-4bbb-9653-f76eb6c6cac2
+        userCondition: null
+handle: contact
+name: Contact
+sortOrder: 1

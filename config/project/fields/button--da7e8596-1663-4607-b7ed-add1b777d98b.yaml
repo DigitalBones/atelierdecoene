@@ -1,0 +1,49 @@
+columnSuffix: null
+handle: button
+instructions: null
+name: Knop
+searchable: false
+settings:
+  advancedFields:
+    - target
+    - class
+    - rel
+  fullGraphqlData: true
+  maxLength: 255
+  showLabelField: true
+  typeSettings:
+    __assoc__:
+      -
+        - entry
+        -
+          __assoc__:
+            -
+              - sources
+              - '*'
+            -
+              - showUnpermittedSections
+              - ''
+            -
+              - showUnpermittedEntries
+              - ''
+      -
+        - url
+        -
+          __assoc__:
+            -
+              - allowRootRelativeUrls
+              - ''
+            -
+              - allowAnchors
+              - ''
+            -
+              - allowCustomSchemes
+              - ''
+  types:
+    - entry
+    - url
+    - email
+    - tel
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Link

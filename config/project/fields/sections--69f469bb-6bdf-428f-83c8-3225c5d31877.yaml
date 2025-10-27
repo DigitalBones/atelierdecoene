@@ -1,0 +1,45 @@
+columnSuffix: null
+handle: sections
+instructions: null
+name: Sections
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - c1e58779-67b4-4b00-82ca-a16aa705ff85 # Section
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - ea7762b2-84f2-4e19-835c-67452d734d5d # Text
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 6478486b-4a0b-4e5c-b1d7-37043ae24d6c # CTA
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

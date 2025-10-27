@@ -1,0 +1,157 @@
+{% extends "_layouts/_base.twig" %}
+
+{% block content %}
+
+    <!-- ============================================-->
+    <!-- Preloader ==================================-->
+    <div class="preloader" id="preloader">
+        <div class="loader">
+            <div class="la-square-loader">
+                <div> </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div> </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================-->
+    <!-- End of Preloader ===========================-->
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+
+    {# sliderImages: assume an Assets field handle on the entry #}
+    {% set sliderImages = entry.sliderImages.all() %}
+    <section class="py-0" id="page-casestudy">
+
+        <div class="container-fluid px-lg-0">
+            <div class="row">
+                <div class="col-lg-6 px-0">
+                    <div class="swiper-container theme-slider swiper-theme sticky-top vh-50 vh-lg-100" data-zanim-lg='{"animation":"zoom-out-slide-right","delay":0.4}' data-zanim-trigger="scroll" data-swiper='{"autoplay":{"delay":5000,"disableOnInteraction":false},"loop":true,"effect":"fade","pagination":{"el":".swiper-pagination","clickable":true,"type":"bullets"}}'>
+                        <div class="swiper-wrapper">
+                            {% if sliderImages|length %}
+                                {% for media in sliderImages %}
+                                    <div class="swiper-slide min-vh-lg-100">
+                                        <img class="fit-cover vh-lg-100 w-100"
+                                             src="{{ media.getUrl({ format: 'webp', height: 1280 }) }}"
+                                             alt="{{ media.title }}" />
+                                    </div>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                        {% if sliderImages|length > 1 %}
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-nav">
+                                <div class="swiper-button-next me-3"></div>
+                                <div class="swiper-button-prev ms-3"></div>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="col-lg-6 py-6 py-lg-4 py-xl-6">
+                    <div class="row h-100 justify-content-center">
+                        <div class="col-lg-10">
+                            <div>
+                                <div class="overflow-hidden">
+                                    <div>
+                                        <a class="btn btn-link ps-0 text-black shadow-none" href="{{ siteUrl }}">
+                                            <span class="fas fa-chevron-left" data-fa-transform="down-1"></span><span class="ps-2 fw-bold">terug</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="overflow-hidden">
+                                    <h2 class="technic">{{ entry.title }}</h2>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-xl-9">
+                                        <div class="overflow-hidden">
+                                            <p class="lead fw-normal text-600" data-zanim-xs='{"delay":0.3}'>
+                                                {{ entry.intro }}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 pe-xl-6 custom-text">
+                                    {{ entry.text | nl2br }}
+                                </div>
+                            </div>
+
+                            {% set images = entry.images.all() %}
+                            {% if images|length %}
+                                <div class="row my-6" id="portfolio-gallery">
+                                    {% if images|length >= 1 and images[0] is not null %}
+                                        {% set img0 = images[0] %}
+                                        <a href="#!" class="col-sm-6 d-flex"
+                                           data-bp="{{ img0.getUrl({ format: 'webp', width: 1920 }) }}"
+                                           data-bigpicture='{"gallery":"#portfolio-gallery"}'
+                                           data-caption="{{ img0.copyright ?? img0.title }}">
+                                            <img class="img-fluid" src="{{ img0.getUrl({ format: 'webp', width: 720 }) }}" alt="{{ img0.title }}" />
+                                        </a>
+                                    {% endif %}
+                                    {% if images|length >= 2 and images[1] is not null %}
+                                        {% set img1 = images[1] %}
+                                        <a href="#!" class="col-sm-6 mt-4 mt-sm-0 d-flex"
+                                           data-bp="{{ img1.getUrl({ format: 'webp', width: 1920 }) }}"
+                                           data-bigpicture='{"gallery":"#portfolio-gallery"}'
+                                           data-caption="{{ img1.copyright ?? img1.title }}">
+                                            <img class="img-fluid" src="{{ img1.getUrl({ format: 'webp', width: 720 }) }}" alt="{{ img1.title }}" />
+                                        </a>
+                                    {% endif %}
+                                    {% if images|length >= 3 and images[2] is not null %}
+                                        {% set img2 = images[2] %}
+                                        <a href="#!" class="col-sm-12 mt-4 d-flex align-items-center justify-content-center"
+                                           data-bp="{{ img2.getUrl({ format: 'webp', width: 1920 }) }}"
+                                           data-bigpicture='{"gallery":"#portfolio-gallery"}'
+                                           data-caption="{{ img2.copyright ?? img2.title }}">
+                                            <img class="img-fluid w-100" src="{{ img2.getUrl({ format: 'webp', width: 720 }) }}" alt="{{ img2.title }}" />
+                                        </a>
+                                    {% endif %}
+                                </div>
+                            {% endif %}
+                        </div>
+
+                        {# FAQ: assume a Matrix field entry.faq with blocks having same fields #}
+                        {% if entry.faq|length %}
+                            <div class="col-lg-10">
+                                <div class="overflow-hidden">
+                                    <h5 class="mt-4">FAQ.</h5>
+                                </div>
+                                <div class="accordion" id="accordionExample">
+                                    {% for faq in entry.faq %}
+                                        {% include '_includes/_faq.twig' with { faq: faq, index: loop.index } %}
+                                    {% endfor %}
+                                </div>
+                            </div>
+
+                        {% endif %}
+
+                        {# CTA: assume a Matrix field entry.cta, blocks with title, subtitle, button #}
+                        {% if entry.cta|length %}
+                            {% for block in entry.cta %}
+                                <div class="col-12 mt-6 pt-6">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-10 text-center">
+                                            <h2 class="primary-font fw-bold">{{ block.title }}</h2>
+                                            <p class="px-lg-6 px-md-5">{{ block.subtitle }}</p>
+                                            {% if block.button %}
+                                                {% include '_includes/_button.twig' with { 'button': block.button } %}
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        {% endif %}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+{% endblock %}

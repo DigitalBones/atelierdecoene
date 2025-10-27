@@ -1,0 +1,136 @@
+dateModified: 1761175103
+email:
+  fromEmail: sander@digitalbones.be
+  fromName: 'Atelier Decoene'
+  replyToEmail: sander@digitalbones.be
+  template: null
+  transportSettings:
+    host: mail.antagonist.nl
+    password: Housim4nd!
+    port: '465'
+    useAuthentication: '1'
+    username: sander@digitalbones.be
+  transportType: craft\mail\transportadapters\Smtp
+fs:
+  hardDisk:
+    hasUrls: true
+    name: 'Hard Disk'
+    settings:
+      path: '@webroot/uploads'
+    type: craft\fs\Local
+    url: '@uploads'
+meta:
+  __names__:
+    0af6ce6f-a97a-4f76-bd29-278fd682a314: CTA # CTA
+    2d13627f-e00a-42e4-bd5b-1ccec30f0663: SEO # SEO
+    2eac3c0f-81d3-407e-8a17-97b59c61550b: Homepage # Homepage
+    3a7d2bf7-23e8-4092-a213-f26454385d34: E-mail # E-mail
+    3bf1fc6a-32c4-4512-b456-d0325706298f: 'Atelier Decoene' # Atelier Decoene
+    4fc479b7-cd01-401d-92a9-b1e6254d1175: Socials # Socials
+    5c9e5f1f-43fc-4af9-bd1c-e6ab8898f708: Contact # Contact
+    6a583257-5a63-4745-8e72-90f2a562fdb2: Images # Images
+    6d203e92-d376-46af-b4ec-3b02c82ed88c: Service # Service
+    7de72ec1-0827-4733-96cd-0c8cbbb57f6c: Slogan # Slogan
+    7e171443-3c52-4a09-b8f9-7cde4ca3a9f9: Afbeeldingen # Afbeeldingen
+    9c59b55d-db42-4958-ae58-56a8230787cf: Realisaties # Realisaties
+    33e6ae70-e937-4eb1-a5cd-875574a5fe61: Homepage # Homepage
+    36b855f8-ed31-4954-8832-28a4b55262b6: Href # Href
+    69f469bb-6bdf-428f-83c8-3225c5d31877: Sections # Sections
+    94c5c59a-13f7-4f75-a2e2-781608a3fb8b: Services # Services
+    329ad96d-12b7-47c7-9d53-01018d9551a6: 'Services tag' # Services tag
+    354c36f9-da48-4330-8419-521a98caf71e: 'Atelier Decoene' # Atelier Decoene
+    375a05a7-486c-4a2f-887b-9c8b708c7afb: Services # Services
+    512bbc88-0ad2-4cc7-bb34-1f9c773249e0: Categories # Categories
+    798ec90f-c371-49f8-b40e-a0ec8d2db105: Multiline # Multiline
+    1938e468-4436-4ee5-b33b-198470e6c651: Realisaties # Realisaties
+    7492e520-b3d5-43c4-86ea-d83e00402b24: FAQ # FAQ
+    15095fe3-32d2-4e6d-a82c-244a1d274e5e: Service # Service
+    6478486b-4a0b-4e5c-b1d7-37043ae24d6c: CTA # CTA
+    a8ff0ab4-113f-4c37-9e22-97f9b2f2a899: 'Sectie type' # Sectie type
+    a80908d6-9360-495c-a804-abe279bc16d7: FAQ # FAQ
+    aa3deb6a-4cc1-4d59-9d00-db2be9dd2b5a: Contact # Contact
+    aa85b445-5e51-423e-a377-9cf5e7b501e4: Beschrijving # Beschrijving
+    b6d1ddb5-6ef9-4488-a2d9-8e614962bfcd: Simple # Simple
+    c1e58779-67b4-4b00-82ca-a16aa705ff85: Section # Section
+    c5120977-4d92-4797-a1ae-29aaa4216f2c: Afbeelding # Afbeelding
+    cd5e52ee-cc44-4390-a845-1ebdf9365f1c: 'Web URL' # Web URL
+    d221c67a-5256-464a-8f2b-6dd9c766cea9: Subtitle # Subtitle
+    d1059c04-e2e0-4e69-b851-bcb7b4c89153: Contact # Contact
+    d4548931-7b37-4baa-8e2b-a30d867bf43d: Text # Text
+    da7e8596-1663-4607-b7ed-add1b777d98b: Knop # Knop
+    ea7762b2-84f2-4e19-835c-67452d734d5d: Text # Text
+    f897272a-a8cb-4db9-8d49-6359241e4ddf: Intro # Intro
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  contact-form:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      allowAttachments: ''
+      allowedMessageFields: null
+      prependSender: 'On behalf of'
+      prependSubject: 'New message from Atelier Decoene'
+      successFlashMessage: 'Bericht werd succesvol verzonden!'
+      toEmail: sander@digitalbones.be
+  seo:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.2.0
+    settings:
+      description: ''
+      facebookAppId: ''
+      metaTemplate: ''
+      removeAlternateUrls: ''
+      robots:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      robotsTxt: "{# Sitemap URL #}\r\nSitemap: {{ url(seo.sitemapName ~ '.xml') }}\r\n\r\n{# Disallows #}\r\n{% if craft.app.config.env != 'production' %}\r\n\r\n{# Disallow access to everything when NOT in production #}\r\nUser-agent: *\r\nDisallow: /\r\n\r\n{% else %}\r\n\r\n{# Disallow access to cpresources/ when live #}\r\nUser-agent: *\r\nDisallow: /cpresources/\r\n\r\n{% endif %}"
+      sitemapLimit: '1000'
+      sitemapName: sitemap
+      socialImage: ''
+      title:
+        -
+          __assoc__:
+            -
+              - key
+              - '1'
+            -
+              - locked
+              - '0'
+            -
+              - template
+              - '{title}.'
+        -
+          __assoc__:
+            -
+              - key
+              - '2'
+            -
+              - locked
+              - '0'
+            -
+              - template
+              - ' | {{ siteName }}'
+      titleSuffix: null
+      twitterHandle: ''
+system:
+  edition: solo
+  live: true
+  name: 'Atelier Decoene'
+  schemaVersion: 5.8.0.3
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true

@@ -1,0 +1,21 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 9c59b55d-db42-4958-ae58-56a8230787cf # Realisaties
+handle: portfolio
+maxAuthors: 1
+name: Realisaties
+previewTargets:
+  -
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  354c36f9-da48-4330-8419-521a98caf71e: # Atelier Decoene
+    enabledByDefault: true
+    hasUrls: true
+    template: portfolio/_entry.twig
+    uriFormat: realisaties
+type: single

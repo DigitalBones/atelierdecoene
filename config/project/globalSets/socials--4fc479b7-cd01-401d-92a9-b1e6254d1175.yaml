@@ -1,0 +1,30 @@
+fieldLayouts:
+  74b05872-42a8-4656-bd0c-42941d3c4483:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-10-22T22:05:41+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: cd5e52ee-cc44-4390-a845-1ebdf9365f1c # Web URL
+            handle: instagram
+            includeInCards: false
+            instructions: null
+            label: Instagram
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2888bb58-fa53-4bfc-9be0-ac249c4a564a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 5f78bb22-e110-419b-9569-da4c2ca3b681
+        userCondition: null
+handle: socials
+name: Socials
+sortOrder: 2

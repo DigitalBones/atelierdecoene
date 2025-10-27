@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="has-sidemenu" lang="nl-BE" dir="ltr">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5FBQR5JL');</script>
+    <!-- End Google Tag Manager -->
+
+    {% hook 'seo' %}
+
+    <!-- ===============================================-->
+    <!--    MetaData-->
+    <!-- ===============================================-->
+    {% include '_includes/_meta.twig' %}
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    {% include '_includes/_favicons.twig' %}
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    {% include '_includes/_styles.twig' %}
+</head>
+
+<body class="overflow-hidden-x">
+<!-- ===============================================-->
+<!--    Navigation -->
+<!-- ===============================================-->
+{% include '_layouts/_navigation.twig' %}
+
+<!-- ===============================================-->
+<!--    Main Content-->
+<!-- ===============================================-->
+<main class="main min-vh-100" id="top">
+    {% block hero %}{% endblock %}
+    {% block content %}{% endblock %}
+</main>
+<!-- ===============================================-->
+<!--    End of Main Content-->
+<!-- ===============================================-->
+
+<!--===============================================-->
+<!--    Footer-->
+<!--===============================================-->
+{% include '_layouts/_footer.twig' %}
+
+<!-- ===============================================-->
+<!--    JavaScripts-->
+<!-- ===============================================-->
+{% include '_includes/_scripts.twig' %}
+
+</body>
+
+</html>

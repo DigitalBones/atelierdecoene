@@ -1,0 +1,55 @@
+
+<!-- ============================================-->
+<!-- Preloader ==================================-->
+{% set bannerImage = entry.image.one() %}
+{% do bannerImage.setTransform({ format: 'webp', width: 1920, height: 1280 }) %}
+<section class="py-0 text-center" id="bigcartel-header">
+
+    <div class="bg-holder overlay overlay-1" style="background-image:url( {{ bannerImage.getUrl() }} );"
+         data-zanim-xs='{"delay":0.4,"animation":"zoom-out"}' data-zanim-trigger="scroll">
+    </div>
+
+    <div class="container">
+        <div class="row min-vh-100 flex-center py-8">
+            <div class="col-lg-7" data-zanim-timeline='{"delay":0.6}' data-zanim-trigger="scroll">
+                <img class="img-fluid" src="{{ url('/assets/img/own/logo.svg') }}" alt="" width="100%"
+                     data-zanim-xs='{"delay":0,"from":{"opacity":0},"to":{"opacity":1}}'/>
+                <div class="overflow-hidden my-4">
+                    <p class="text-white px-lg-6"
+                       data-zanim-xs='{"delay":0}'>{{ entry.slogan }}</p>
+                </div>
+            </div>
+        </div>
+        <a class="indicator indicator-down" data-zanim-timeline='{"delay":2}' data-zanim-trigger="scroll"
+           href="#arrow-down">
+                <span class="indicator-arrow indicator-arrow-one border-300"
+                      data-zanim-xs='{"from":{"opacity":0,"y":15},"to":{"opacity":1,"y":-5,"scale":1},"ease":"Back.easeOut","duration":0.4,"delay":0.25}'></span><span
+                    class="indicator-arrow indicator-arrow-two border-300"
+                    data-zanim-xs='{"from":{"opacity":0,"y":15},"to":{"opacity":1,"y":-5,"scale":1},"ease":"Back.easeOut","duration":0.4,"delay":0.5}'>
+                </span>
+        </a>
+    </div>
+    <!-- end of .container-->
+
+</section>
+<!-- ============================================-->
+<!-- End of Preloader ===========================-->
+
+
+<!-- ============================================-->
+<!-- <section> begin ============================-->
+<div class="preloader" id="preloader">
+    <div class="loader">
+        <div class="line-scale-pulse-out-rapid">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+<!-- <section> close ============================-->
+<!-- ============================================-->
+
+<div id="arrow-down"></div>

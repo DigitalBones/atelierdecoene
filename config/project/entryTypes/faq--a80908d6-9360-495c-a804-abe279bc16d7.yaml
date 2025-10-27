@@ -1,0 +1,72 @@
+color: blue
+description: null
+fieldLayouts:
+  b5d2512c-76a4-4482-92f2-4ae4ee265c17:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:7fc7df34-4d3d-44eb-9526-4d472c9854b0'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-10-22T17:58:37+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: Vraag
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: ff0f68aa-68fb-4c11-a86f-ed03ef83b0e5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-22T18:00:30+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: aa85b445-5e51-423e-a377-9cf5e7b501e4 # Beschrijving
+            handle: answer
+            includeInCards: true
+            instructions: null
+            label: Antwoord
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7fc7df34-4d3d-44eb-9526-4d472c9854b0
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 26c16fa7-cc30-4b8a-822f-7ca434df739d
+        userCondition: null
+handle: faq
+hasTitleField: true
+icon: messages-question
+name: FAQ
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

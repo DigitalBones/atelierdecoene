@@ -1,0 +1,65 @@
+<nav class="fancynavbar fancynavbar-expand-lg"
+     data-zanim-lg='{"from":{"opacity":1,"x":70},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.3}'
+     data-zanim-xs='{"from":{"opacity":0,"y":-37},"to":{"opacity":1,"y":0},"ease":"CubicBezier","duration":0.8,"delay":0.3}'
+     data-zanim-trigger="scroll" data-exclusive="true">
+    <div class="fancynavbar-togglerbar my-xs-2 my-sm-0" data-onscroll-fade-in="data-onscroll-fade-in">
+        <a class="fancynavbar-brand" href="/">
+            <img class="fancynavbar-brand-img" src="{{ url('/assets/img/logo/text_white.png') }}" alt="" width="40" height="40"
+                 data-zanim-lg='{"from":{"opacity":0,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.4}'
+                 data-zanim-trigger="scroll"/>
+        </a>
+        <div class="fancynavbar-toggler">
+            <svg class="fancynavbar-toggler-icon" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg"
+                 data-zanim-lg='{"from":{"opacity":0,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.5}'
+                 data-zanim-trigger="scroll">
+                <path id="path-top"
+                      d="M20,25c0,0,22,0,30,0c16,0,18.89,40.71-.15,21.75C38.7,35.65,19.9,16.8,19.9,16.8"></path>
+                <path id="path-middle" d="M20,32h30"></path>
+                <path id="path-bottom"
+                      d="M19.9,46.98c0,0,18.8-18.85,29.95-29.95C68.89-1.92,66,38.78,50,38.78c-8,0-30,0-30,0"></path>
+            </svg>
+        </div>
+        <div class="fancynavbar-addon fancynavbar-addon-height"
+             data-zanim-lg='{"from":{"opacity":1,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.4}'
+             data-zanim-trigger="scroll">
+            <a class="fancynavbar-addon-item" href="{{ socials.instagram }}" target="_blank">
+                <span class="fab fa-instagram"></span>
+            </a>
+        </div>
+    </div>
+    <div class="fancynavbar-collapse ps-2 ps-lg-4 pe-2">
+        <ul class="fancynavbar-nav">
+            <li class="fancynav-item">
+                <a class="fancynav-link ps-1 ps-xl-5" href="/">
+                    <span class="fancynav-link-content">Home.</span>
+                </a>
+            </li>
+            {% set services = services is defined ? services : craft.entries().section('service').all() %}
+            {% for service in services %}
+                <li class="fancynav-item">
+                    <a class="fancynav-link ps-1 ps-xl-5" href="{{ service.url ?? ('/service/' ~ (service.slug ?? '')) }}">
+                        <span class="fancynav-link-content">{{ service.title ?? service.name }}.</span>
+                    </a>
+                </li>
+            {% endfor %}
+            <li class="fancynav-item">
+                <a class="fancynav-link ps-1 ps-xl-5" href="/realisaties">
+                    <span class="fancynav-link-content">Realisaties.</span>
+                </a>
+            </li>
+            <li class="fancynav-item">
+                <a class="fancynav-link ps-1 ps-xl-5" href="/contact">
+                    <span class="fancynav-link-content">Contact.</span>
+                </a>
+            </li>
+            {#            {% for item in sulu_navigation_root_tree('main') %} #}
+            {#                {% set target = item.nodeType == 4 ? '_blank' : '_self' %} #}
+            {#                <li class="fancynav-item"> #}
+            {#                    <a class="fancynav-link ps-1 ps-xl-5" href="{{ sulu_content_path(item.url, item.webspaceKey) }}" target="{{ target }}" title="{{ item.title }}"> #}
+            {#                        <span class="fancynav-link-content">{{ item.title }}.</span> #}
+            {#                    </a> #}
+            {#                </li> #}
+            {#            {% endfor %} #}
+        </ul>
+    </div>
+</nav>

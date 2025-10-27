@@ -1,0 +1,241 @@
+color: null
+description: null
+fieldLayouts:
+  40243ae6-f6ca-4510-bcf8-bb0560d3e0cf:
+    cardThumbAlignment: start
+    cardView:
+      - 'layoutElement:26fd3c19-fab5-4372-95d2-6537f1d91b46'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-10-22T18:36:17+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: f428c262-e5a2-452d-9aca-d8cf4420ee91
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-22T18:40:19+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 7e171443-3c52-4a09-b8f9-7cde4ca3a9f9 # Afbeeldingen
+            handle: sliderImages
+            includeInCards: false
+            instructions: null
+            label: 'Slider afbeeldingen'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 75c35058-2aab-41f6-b8bf-b5c8137dc7c0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-22T18:40:19+00:00'
+            elementCondition: null
+            heading: Pagina
+            type: craft\fieldlayoutelements\Heading
+            uid: b84c6dd2-3973-4694-a2b4-d399b8c0575d
+            userCondition: null
+          -
+            dateAdded: '2025-10-22T18:40:19+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f897272a-a8cb-4db9-8d49-6359241e4ddf # Intro
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 26fd3c19-fab5-4372-95d2-6537f1d91b46
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-22T18:40:19+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: aa85b445-5e51-423e-a377-9cf5e7b501e4 # Beschrijving
+            handle: text
+            includeInCards: false
+            instructions: null
+            label: Tekst
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7bf4b6b9-dcac-4a19-b6b4-188031ad08d4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-22T18:40:19+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 7e171443-3c52-4a09-b8f9-7cde4ca3a9f9 # Afbeeldingen
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 13af55d0-b9cc-4a9b-9438-74ea42c415ac
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-22T18:40:19+00:00'
+            elementCondition: null
+            heading: FAQ
+            type: craft\fieldlayoutelements\Heading
+            uid: 7c8a5b41-5161-43f4-80eb-979476498548
+            userCondition: null
+          -
+            dateAdded: '2025-10-22T18:40:19+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 7492e520-b3d5-43c4-86ea-d83e00402b24 # FAQ
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3ef7bdce-4cab-4c67-8438-34bc0b41a40d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-22T18:40:19+00:00'
+            elementCondition: null
+            heading: 'Call to Action'
+            type: craft\fieldlayoutelements\Heading
+            uid: 92cbaf97-cba3-4307-a38a-6cba92c5329f
+            userCondition: null
+          -
+            dateAdded: '2025-10-22T18:40:19+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 0af6ce6f-a97a-4f76-bd29-278fd682a314 # CTA
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3c968255-ad3e-4089-8cb4-7af3ef114ee5
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: af0b7143-460e-4185-8cf0-b618a10e1de7
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-10-22T19:04:04+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c5120977-4d92-4797-a1ae-29aaa4216f2c # Afbeelding
+            handle: relationImage
+            includeInCards: false
+            instructions: 'Deze afbeelding wordt gebruikt om bij relaties te tonen (zoals op de homepage).'
+            label: 'Relatie afbeelding'
+            providesThumbs: true
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2d227b4f-8266-4472-bc6c-9e9726b1e6a8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-22T19:09:42+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: d221c67a-5256-464a-8f2b-6dd9c766cea9 # Subtitle
+            handle: relationSubtitle
+            includeInCards: false
+            instructions: null
+            label: Subtitel
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 269ad103-69d7-4d60-a3fc-2c6e6b2aa4b3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Relatie
+        uid: 7035015d-f545-41cd-84a6-2bdf7e4d4b29
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-10-22T23:17:12+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 2d13627f-e00a-42e4-bd5b-1ccec30f0663 # SEO
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 822820b7-0a63-4e62-86b7-7b2fb61be304
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: b7f9f2f9-6c0e-4a3b-bbdb-ddd30eaa7dd5
+        userCondition: null
+handle: service
+hasTitleField: true
+icon: paint-roller
+name: Service
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

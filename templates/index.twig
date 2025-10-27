@@ -1,0 +1,81 @@
+{% extends "_layouts/_base.twig" %}
+
+{% block hero %}
+    {% include '_layouts/_hero.twig' %}
+{% endblock %}
+
+{% block content %}
+
+    <!-- ============================================-->
+    <!-- <section> intro begin ============================-->
+    <section class="text-center pb-0" id="bicycleAbout">
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    {{ entry.intro|raw }}
+                </div>
+            </div>
+        </div>
+        <!-- end of .container-->
+
+    </section>
+    <!-- <section> intro close ============================-->
+    <!-- ============================================-->
+
+    <!-- ============================================-->
+    <!-- <section> services begin ============================-->
+    <section class="text-center" id="bicycleFeatures">
+        <div class="container-fluid max-container p-0">
+            <div class="row m-0">
+                {% for service in entry.services.all() %}
+                    {% set image = service.relationImage.one() ?? null %}
+                    {% set imageUrl = image
+                        ? image.getUrl({ width: 991, format: 'webp' })
+                        : null %}
+
+                    <div class="col-md-4 mb-3 category-wrapper">
+                        <a class="category w-100 h-100 d-inline-block" href="{{ service.url }}">
+                            <div class="position-relative overflow-hidden h-100">
+                                <div class="bg-holder overlay"
+                                     style="background-image: url({{ imageUrl }});">
+                                </div>
+                                <div class="position-relative py-8 py-md-11 h-100 d-flex justify-content-center align-items-center">
+                                    <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                                        <div class="overflow-hidden">
+                                            <h6 class="text-white ls text-uppercase" data-zanim-xs='{"delay":0}'>
+                                                {{ service.relationSubtitle }}
+                                            </h6>
+                                        </div>
+                                        <div class="overflow-hidden">
+                                            <h2 class="fs-2 fs-sm-3 text-white" data-zanim-xs='{"delay":0.1}'>{{ service.title }}.</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- <section> services close ============================-->
+    <!-- ============================================-->
+
+{#    {% cache using key "section-list" %}#}
+        {% set sections = entry.sections.all() %}
+        {% for section in sections %}
+            {% set sectionType = section.type.handle %}
+            {% set first = loop.first %}
+            {% set last = loop.last %}
+            {% set index = loop.index0 %}
+
+            {% if sectionType == 'cta' %}
+                {% include '_sections/_cta.twig' with { 'section' : section, 'first' : first , 'last' : last, 'index' : index } %}
+            {% else %}
+                <small>{{ sectionType }}</small>
+            {% endif %}
+        {% endfor %}
+{#    {% endcache %}#}
+
+{% endblock %}

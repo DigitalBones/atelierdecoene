@@ -1,0 +1,45 @@
+columnSuffix: null
+handle: sectionType
+instructions: null
+name: 'Sectie type'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Afbeelding links'
+        -
+          - value
+          - left
+        -
+          - icon
+          - arrow-left-to-line
+        -
+          - color
+          - ''
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Afbeelding rechts'
+        -
+          - value
+          - right
+        -
+          - icon
+          - arrow-right-to-line
+        -
+          - color
+          - ''
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

@@ -1,0 +1,161 @@
+color: null
+description: null
+fieldLayouts:
+  ca434269-7379-484d-9c69-9e6ab6785125:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-10-22T17:35:24+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 3553bd54-b926-43b5-ac9c-f2facc8b9b17
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-22T17:38:56+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 7de72ec1-0827-4733-96cd-0c8cbbb57f6c # Slogan
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8776c6f4-bfea-42bf-ab4e-e7c21e475fec
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-22T17:38:56+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c5120977-4d92-4797-a1ae-29aaa4216f2c # Afbeelding
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ef81d935-a085-4a87-b8df-a07b1300d3a5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-22T18:04:47+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: aa85b445-5e51-423e-a377-9cf5e7b501e4 # Beschrijving
+            handle: intro
+            includeInCards: false
+            instructions: null
+            label: Intro
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3914637e-162a-40b1-bf5b-e74b483a4b8c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-22T18:02:11+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 69f469bb-6bdf-428f-83c8-3225c5d31877 # Sections
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Secties
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0461e475-19d2-417c-adcc-8fd5c82b66a2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-22T18:53:46+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 94c5c59a-13f7-4f75-a2e2-781608a3fb8b # Services
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6897caed-cbb0-4128-be03-5ac5206418aa
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 5a40a063-c925-4497-990e-c6e23f354c9d
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-10-22T23:15:21+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 2d13627f-e00a-42e4-bd5b-1ccec30f0663 # SEO
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6d29407d-ba46-4a23-8f5a-c3405ae7d786
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 4623f1d9-2a70-4d37-bd50-5bd85db8e67f
+        userCondition: null
+handle: homepage
+hasTitleField: true
+icon: house-chimney-heart
+name: Homepage
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,67 @@
+<!--===============================================-->
+<!--    Footer-->
+<!--===============================================-->
+
+<footer class="footer text-600 py-4 text-center" data-zanim-timeline="{}"
+        data-zanim-trigger="scroll">
+    <div class="container">
+
+        <div class="row mb-4 align-items-left">
+            <div class="col-lg-4 text-start fs--1 ">
+                <div class="row">
+                    <p class="col-6">
+                        {% if contact.name %}{{ contact.name }}{% endif %}
+                        {% if contact.name and contact.mobile %}<br/>{% endif %}
+                        {% if contact.mobile %}
+                            <a class="text-600" href="tel:{{ contact.mobile }}">{{ contact.mobile }}</a>
+                        {% endif %}
+                    </p>
+                    <p class="col-6">
+                        {% if contact.vat %}{{ contact.vat }}{% endif %}
+                        {% if contact.vat and contact.bankAccount %}<br/>{% endif %}
+                        {% if contact.bankAccount %}{{ contact.bankAccount }}{% endif %}
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        {% if contact.address %}
+                            {{ contact.address|nl2br }}
+                        {% else %}
+                            Bosdreef 10<br/>8210 Veldegem
+                        {% endif %}
+                    </div>
+                    <p class="col-6">
+                        {% if contact.email %}
+                            <a class="text-600" href="mailto:{{ contact.email }}">{{ contact.email }}</a>
+                        {% endif %}
+                        {% if contact.email and contact.website %}<br/>{% endif %}
+                        {% if contact.website %}
+                            <a class="text-black fw-bold" href="{{ contact.website }}">{{ contact.website }}</a>
+                        {% endif %}
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4 mt-lg-0">
+            </div>
+            <div class="col-lg-4 text-lg-end order-lg-2 mt-2 mt-lg-0 d-flex justify-content-center justify-content-sm-end align-items-center">
+                <img src="{{ url('/assets/img/logo/AD-HL.png') }}" style="width: 200px; height: 67px" alt="logo" />
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-4 order-lg-2 position-relative"><a class="indicator indicator-up" href="#top"><span
+                            class="indicator-arrow indicator-arrow-one"
+                            data-zanim-xs='{"from":{"opacity":0,"y":15},"to":{"opacity":1,"y":-5,"scale":1},"ease":"Back.easeOut","duration":0.4,"delay":0.9}'></span><span
+                            class="indicator-arrow indicator-arrow-two"
+                            data-zanim-xs='{"from":{"opacity":0,"y":15},"to":{"opacity":1,"y":-5,"scale":1},"ease":"Back.easeOut","duration":0.4,"delay":1.05}'></span></a>
+            </div>
+            <div class="col-lg-4 text-lg-start mt-4 mt-lg-0">
+                <p class="fs--1 text-uppercase ls fw-bold mb-0">Copyright &copy; {{ "now"|date("Y") }} {{ contact.name ?? 'Atelier Decoene' }}.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end order-lg-2 mt-2 mt-lg-0">
+                <p class="fs--1 text-uppercase ls fw-bold mb-0">Website by <a class="text-600 text-decoration-underline fw-normal"
+                                                                              href="https://www.digitalbones.be/">Digital<span class="fw-black">Bones</span></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>

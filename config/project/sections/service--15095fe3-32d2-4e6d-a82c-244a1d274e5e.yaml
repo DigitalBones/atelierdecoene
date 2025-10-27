@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 6d203e92-d376-46af-b4ec-3b02c82ed88c # Service
+handle: service
+maxAuthors: 1
+name: Service
+previewTargets:
+  -
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  354c36f9-da48-4330-8419-521a98caf71e: # Atelier Decoene
+    enabledByDefault: true
+    hasUrls: true
+    template: service/_entry.twig
+    uriFormat: '{slug}'
+structure:
+  maxLevels: 1
+  uid: 518511f5-01ee-477c-bd1f-6ada8c88147b
+type: structure

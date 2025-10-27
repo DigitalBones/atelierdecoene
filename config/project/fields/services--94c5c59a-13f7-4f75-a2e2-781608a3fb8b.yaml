@@ -1,0 +1,26 @@
+columnSuffix: null
+handle: services
+instructions: null
+name: Services
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  defaultPlacement: end
+  maintainHierarchy: false
+  maxRelations: 3
+  minRelations: null
+  selectionLabel: 'Voeg toe'
+  showCardsInGrid: false
+  showSearchInput: true
+  showSiteMenu: true
+  showUnpermittedEntries: false
+  showUnpermittedSections: false
+  sources:
+    - 'section:15095fe3-32d2-4e6d-a82c-244a1d274e5e' # Service
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Entries

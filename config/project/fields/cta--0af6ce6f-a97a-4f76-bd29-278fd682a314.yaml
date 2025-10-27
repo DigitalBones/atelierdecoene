@@ -1,0 +1,29 @@
+columnSuffix: null
+handle: cta
+instructions: null
+name: CTA
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 6478486b-4a0b-4e5c-b1d7-37043ae24d6c # CTA
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: 1
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

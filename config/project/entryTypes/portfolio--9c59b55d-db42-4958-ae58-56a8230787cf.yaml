@@ -1,0 +1,127 @@
+color: null
+description: null
+fieldLayouts:
+  52124c29-ee97-47d0-ba0d-e973565f10e1:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-10-22T22:26:40+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 028239f6-025f-4268-9129-57d7e33c1c7b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-22T22:28:14+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f897272a-a8cb-4db9-8d49-6359241e4ddf # Intro
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8df3cb0a-21ff-4c6d-a075-92987c3aac40
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-22T22:28:14+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 7e171443-3c52-4a09-b8f9-7cde4ca3a9f9 # Afbeeldingen
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9c0ed85a-e9ca-43ea-bae9-4659d733063b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-22T22:29:50+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 0af6ce6f-a97a-4f76-bd29-278fd682a314 # CTA
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1f9f8283-47da-47c8-b605-283c5732d29e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: b745dac4-bb57-4ac2-9c9c-5751d52b38fa
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-10-22T23:16:47+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 2d13627f-e00a-42e4-bd5b-1ccec30f0663 # SEO
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 160005f5-cfb0-4eef-b36c-9a02cc00f27c
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: f5c98c83-d791-4af7-8066-74ac8a1218da
+        userCondition: null
+handle: portfolio
+hasTitleField: true
+icon: camera
+name: Realisaties
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

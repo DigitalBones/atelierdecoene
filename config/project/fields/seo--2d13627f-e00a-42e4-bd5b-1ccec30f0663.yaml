@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: seo
+instructions: null
+name: SEO
+searchable: false
+settings:
+  description: ''
+  hideSocial: ''
+  robots:
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+  socialImage: ''
+  suffixAsPrefix: null
+  title: null
+  titleSuffix: null
+translationKeyFormat: null
+translationMethod: none
+type: ether\seo\fields\SeoField
