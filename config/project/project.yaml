@@ -1,4 +1,4 @@
-dateModified: 1761175103
+dateModified: 1761591749
 email:
   fromEmail: sander@digitalbones.be
   fromName: 'Atelier Decoene'
@@ -72,10 +72,10 @@ plugins:
     settings:
       allowAttachments: ''
       allowedMessageFields: null
-      prependSender: 'On behalf of'
-      prependSubject: 'New message from Atelier Decoene'
+      prependSender: 'Bericht van '
+      prependSubject: 'Nieuw bericht van contactformulier'
       successFlashMessage: 'Bericht werd succesvol verzonden!'
-      toEmail: sander@digitalbones.be
+      toEmail: info@atelierdecoene.be
   seo:
     edition: standard
     enabled: true
